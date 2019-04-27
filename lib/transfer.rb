@@ -15,7 +15,8 @@ def valid?
 end
 
 def execute_transaction
-
+@sender.withdraw(amount)
+@receiver.deposit(amount)
 end
 
 def reverse_transfer
