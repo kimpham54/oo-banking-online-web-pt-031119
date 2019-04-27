@@ -1,6 +1,6 @@
 class Transfer
 
-attr_accessor :sender, :receiver, :status
+attr_accessor :sender, :receiver, :status, :amount
 
   def initialize(sender, receiver, amount)
     @sender = sender
@@ -15,6 +15,7 @@ def valid?(sender, receiver)
 end
 
 def execute_transaction
+
 end
 
 def reverse_transfer
