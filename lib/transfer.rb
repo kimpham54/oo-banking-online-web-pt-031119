@@ -29,7 +29,7 @@ end
 end
 
 def reverse_transfer
-  @sender.balance + @amount 
+  @sender.balance + @amount
   @receiver.balance - @amount
 end
 
