@@ -16,7 +16,7 @@ end
 
 def execute_transaction
 if @status != "complete"
-  if @sender.valid? && @sender.balance > @amount
+  # if @sender.valid? && @sender.balance > @amount
     @sender.withdraw(@amount)
     @receiver.deposit(@amount)
     @status = "complete"
