@@ -21,6 +21,7 @@ if @sender.valid?
   @status = "complete"
 else
   @status = "rejected"
+end
 
 end
 
