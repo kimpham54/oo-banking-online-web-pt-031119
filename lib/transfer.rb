@@ -21,7 +21,7 @@ if @sender.valid?
   @status = "complete"
 else
   @status = "rejected"
-  
+
 end
 
 def reverse_transfer
