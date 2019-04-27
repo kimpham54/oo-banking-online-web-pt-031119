@@ -8,4 +8,18 @@ attr_accessor :sender, :receiver, :status
     @status = "pending"
     @amount = amount
   end
+
+def valid?(sender, receiver)
+  sender.valid?
+  receiver.valid?
+end
+
+def execute_transaction
+end
+
+def reverse_transfer
+end
+
+
+  
 end
