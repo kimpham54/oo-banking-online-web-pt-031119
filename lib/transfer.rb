@@ -15,8 +15,13 @@ def valid?
 end
 
 def execute_transaction
-@sender.withdraw(amount)
-@receiver.deposit(amount)
+if @sender.valid?
+  @sender.withdraw(amount)
+  @receiver.deposit(amount)
+  @status = "complete"
+else
+  @status = "rejected"
+  
 end
 
 def reverse_transfer
